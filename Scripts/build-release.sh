@@ -30,6 +30,9 @@ xcodebuild \
 [ -d "$app" ] || { echo "Build failed: $app not found" >&2; exit 1; }
 
 codesign --verify --deep --strict "$app"
+# Xcode before 26 copies the Icon Composer document as is and the app ships without an icon.
+/usr/libexec/PlistBuddy -c "Print :CFBundleIconName" "$app/Contents/Info.plist" >/dev/null 2>&1 ||
+    { echo "Build has no app icon: build with Xcode 26 or later" >&2; exit 1; }
 # ditto keeps the bundle's signature and extended attributes intact, unlike zip.
 ditto -c -k --keepParent "$app" "$archive"
 (cd dist && shasum -a 256 "$(basename "$archive")" > "$(basename "$archive").sha256")

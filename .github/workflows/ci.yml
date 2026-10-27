@@ -17,7 +17,7 @@ concurrency:
 jobs:
   test:
     name: Test FanKit
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
@@ -32,7 +32,7 @@ jobs:
 
   build:
     name: Build app
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
@@ -50,7 +50,7 @@ jobs:
 
   lint:
     name: SwiftFormat
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
@@ -91,7 +91,7 @@ jobs:
     name: Release
     needs: [test, build, semgrep]
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta')
-    runs-on: macos-15
+    runs-on: macos-26
     permissions:
       contents: write # tags, the release commit and the GitHub release
     concurrency:
