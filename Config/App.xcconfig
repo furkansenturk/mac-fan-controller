@@ -1,6 +1,8 @@
-// FanController.app
+// Fan Controller.app
 
-PRODUCT_NAME = FanController
+PRODUCT_NAME = Fan Controller
+// The Swift module keeps the name without a space.
+PRODUCT_MODULE_NAME = FanController
 PRODUCT_BUNDLE_IDENTIFIER = $(APP_BUNDLE_ID)
 
 GENERATE_INFOPLIST_FILE = YES

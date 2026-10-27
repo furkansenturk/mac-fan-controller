@@ -11,7 +11,7 @@ cd "$(dirname "$0")/.."
 
 version="${1:-$(sed -n 's/^MARKETING_VERSION = //p' Config/Base.xcconfig)}"
 derived_data="build/DerivedData"
-app="$derived_data/Build/Products/Release/FanController.app"
+app="$derived_data/Build/Products/Release/Fan Controller.app"
 archive="dist/FanController-$version.dmg"
 staging="build/dmg"
 
@@ -37,7 +37,7 @@ codesign --verify --deep --strict "$app"
 # The disk image opens to the app next to a link to Applications, to drag it across. ditto keeps the
 # bundle's signature and extended attributes intact.
 mkdir -p "$staging"
-ditto "$app" "$staging/FanController.app"
+ditto "$app" "$staging/Fan Controller.app"
 ln -s /Applications "$staging/Applications"
 hdiutil create -quiet -volname "Fan Controller" -srcfolder "$staging" -fs HFS+ -format UDZO "$archive"
 rm -rf "$staging"

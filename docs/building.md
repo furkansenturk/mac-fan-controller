@@ -96,7 +96,7 @@ Because the app isn't notarized, macOS blocks it the first time. Verify the down
 
 ```sh
 shasum -a 256 -c FanController-<version>.dmg.sha256
-xattr -dr com.apple.quarantine /Applications/FanController.app
+xattr -dr com.apple.quarantine "/Applications/Fan Controller.app"
 ```
 
 The README and every pre-release's notes (`releaseBodyTemplate` in `.releaserc.json`) give the same step; remove it from both once releases are signed with a Developer ID.

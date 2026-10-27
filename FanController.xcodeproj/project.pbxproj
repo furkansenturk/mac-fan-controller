@@ -109,7 +109,7 @@
 		73C5DC12DD75D0367E0C7871 /* AlertMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMonitor.swift; sourceTree = "<group>"; };
 		7EB97F2ACDE583118382CC49 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		83CFFCCF1939A59A6C1727D5 /* FanRuleRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanRuleRows.swift; sourceTree = "<group>"; };
-		84337AD8D27FCD69AF2C4FC2 /* FanController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84337AD8D27FCD69AF2C4FC2 /* Fan Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fan Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B90F77F8EBD6CDA725229D6 /* TemperaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturesView.swift; sourceTree = "<group>"; };
 		91DA5765C1CB50245C0511D8 /* FanKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FanKit; path = Packages/FanKit; sourceTree = "<group>"; };
 		9341649735D34EA5E8F45A4F /* FanCurveChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanCurveChart.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		2F3A6B1E78F896718625FF06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84337AD8D27FCD69AF2C4FC2 /* FanController.app */,
+				84337AD8D27FCD69AF2C4FC2 /* Fan Controller.app */,
 				C5C1729E2B9E8C0312DDB9DE /* FanHelper */,
 			);
 			name = Products;
@@ -377,7 +377,7 @@
 				9045364554679B78BB2EFF71 /* FanXPC */,
 			);
 			productName = FanController;
-			productReference = 84337AD8D27FCD69AF2C4FC2 /* FanController.app */;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* Fan Controller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

@@ -58,12 +58,12 @@ Written in Swift and SwiftUI, designed to follow Apple's Human Interface Guideli
 
 ## Download
 
-Fan Controller is in beta. Download `FanController-<version>.dmg` from the [releases](https://github.com/furkansenturk/mac-fan-controller/releases), open it and drag **FanController** to Applications.
+Fan Controller is in beta. Download `FanController-<version>.dmg` from the [releases](https://github.com/furkansenturk/mac-fan-controller/releases), open it and drag **Fan Controller** to Applications.
 
 During the beta, releases aren't signed with a Developer ID or notarized, so macOS says it can't verify the app and won't open it. Remove the quarantine flag once after installing:
 
 ```sh
-xattr -dr com.apple.quarantine /Applications/FanController.app
+xattr -dr com.apple.quarantine "/Applications/Fan Controller.app"
 ```
 
 Or open it once, then choose **Open Anyway** in **System Settings › Privacy & Security**. This step goes away once releases are signed with a Developer ID.
