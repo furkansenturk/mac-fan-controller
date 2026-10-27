@@ -73,7 +73,7 @@ While the app is in beta, all work goes to `beta`, the default branch, through s
 
 1. The version follows from the [Conventional Commits](https://www.conventionalcommits.org) since the last tag: `fix:` gives a patch release, `feat:` a minor one, and `feat!:` or a `BREAKING CHANGE:` footer a major one. Other types (`docs:`, `ci:`, `test:`, `refactor:`, `chore:`…) don't release. On `beta`, the pre-release number goes up instead until the version changes.
 
-2. `Scripts/set-version.sh` writes the version to `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` in `Config/Base.xcconfig`. The app and the helper both take their `CFBundleVersion` from it, and the app restarts an installed helper whose version differs from its own, so the helper is updated with every release.
+2. `Scripts/set-version.sh` writes the version to `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` in `Config/Base.xcconfig`. Bundle versions must be numbers, so `0.2.0-beta.1` becomes `0.2.0` and `0.2.0.1`. The app and the helper both take their `CFBundleVersion` from it, and the app restarts an installed helper whose version differs from its own, so the helper is updated with every release.
 3. `Scripts/build-release.sh` builds the app and zips it as `dist/FanController-<version>.zip`, with a `.sha256` checksum.
 4. `CHANGELOG.md` and `Base.xcconfig` are committed back to the branch as `chore(release): <version> [skip ci]`, the commit is tagged `v<version>`, and a GitHub release is published with the notes, the zip and its checksum (marked as a pre-release from `beta`). GitHub adds the source code archives to every release.
 

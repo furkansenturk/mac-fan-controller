@@ -1,6 +1,7 @@
 #!/bin/sh
 # Builds the downloadable app into dist/: FanController-<version>.zip and its SHA-256 checksum.
-# Run by semantic-release after Scripts/set-version.sh; also works locally.
+# Run by semantic-release after Scripts/set-version.sh, with the full version (0.2.0-beta.1) for the file
+# name; also works locally, where it falls back to MARKETING_VERSION.
 #
 # The build is ad-hoc signed, without a team, whatever Config/Signing.xcconfig says, so every release is
 # built the same way. Such a build reads sensors but can't control fans: the helper only accepts an app
@@ -8,7 +9,7 @@
 set -eu
 cd "$(dirname "$0")/.."
 
-version="$(sed -n 's/^MARKETING_VERSION = //p' Config/Base.xcconfig)"
+version="${1:-$(sed -n 's/^MARKETING_VERSION = //p' Config/Base.xcconfig)}"
 derived_data="build/DerivedData"
 app="$derived_data/Build/Products/Release/FanController.app"
 archive="dist/FanController-$version.zip"

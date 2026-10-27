@@ -14,7 +14,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "Scripts/set-version.sh ${nextRelease.version} && Scripts/build-release.sh"
+        "prepareCmd": "Scripts/set-version.sh ${nextRelease.version} && Scripts/build-release.sh ${nextRelease.version}"
       }
     ],
     [
