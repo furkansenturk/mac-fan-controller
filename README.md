@@ -58,9 +58,17 @@ Written in Swift and SwiftUI, designed to follow Apple's Human Interface Guideli
 
 ## Download
 
-Download `FanController-<version>.zip` from the [latest release](https://github.com/furkansenturk/mac-fan-controller/releases/latest), unzip it and move **FanController** to Applications. The download shows every sensor, but can't control fans: it isn't signed by a developer team, which the fan control helper requires. Build from source for fan control.
+Fan Controller is in beta. Download `FanController-<version>.dmg` from the [releases](https://github.com/furkansenturk/mac-fan-controller/releases), open it and drag **Fan Controller** to Applications.
 
-The app isn't notarized, so macOS blocks it the first time: open it, then choose **Open Anyway** in **System Settings › Privacy & Security**. See [docs/building.md](docs/building.md#the-released-app-is-ad-hoc-signed).
+During the beta, releases aren't signed with a Developer ID or notarized, so macOS says it can't verify the app and won't open it. Remove the quarantine flag once after installing:
+
+```sh
+xattr -dr com.apple.quarantine "/Applications/Fan Controller.app"
+```
+
+Or open it once, then choose **Open Anyway** in **System Settings › Privacy & Security**. This step goes away once releases are signed with a Developer ID.
+
+The download shows every sensor, but can't control fans: it isn't signed by a developer team, which the fan control helper requires. Build from source for fan control. See [docs/building.md](docs/building.md#the-released-app-is-ad-hoc-signed).
 
 ## Build from source
 

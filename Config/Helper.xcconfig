@@ -1,4 +1,4 @@
-// FanHelper: privileged launch daemon embedded in FanController.app/Contents/MacOS.
+// FanHelper: privileged launch daemon embedded in Fan Controller.app/Contents/MacOS.
 
 PRODUCT_NAME = FanHelper
 PRODUCT_BUNDLE_IDENTIFIER = $(HELPER_BUNDLE_ID)

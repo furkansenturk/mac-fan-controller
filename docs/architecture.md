@@ -4,7 +4,7 @@ Fan Controller has two executables and one Swift package:
 
 | Component | Runs as | Responsibility |
 | --- | --- | --- |
-| `FanController.app` | the logged-in user | The whole UI, reading fans and sensors, profiles, automation and alerts |
+| `Fan Controller.app` | the logged-in user | The whole UI, reading fans and sensors, profiles, automation and alerts |
 | `FanHelper` | root, launched by `launchd` | Writing fan mode and target speed to the SMC, nothing else |
 | `Packages/FanKit` | linked into both | SMC and IOHID access, domain models, the XPC contract |
 
@@ -14,7 +14,7 @@ Reading the SMC works without privileges, so the app reads it directly. Only wri
 
 ```mermaid
 flowchart LR
-    subgraph App["FanController.app (user)"]
+    subgraph App["Fan Controller.app (user)"]
         Monitor["HardwareMonitor<br/>every 2 s"]
         Reader["HardwareReader"]
         Profiles["ProfileStore"]
@@ -185,10 +185,10 @@ The **Fans** menu lists the profiles, **Set All Fans to Automatic** (⌥⌘A), *
 ## Bundle layout
 
 ```
-FanController.app/
+Fan Controller.app/
 └── Contents/
     ├── MacOS/
-    │   ├── FanController
+    │   ├── Fan Controller
     │   └── FanHelper
     ├── Library/
     │   └── LaunchDaemons/

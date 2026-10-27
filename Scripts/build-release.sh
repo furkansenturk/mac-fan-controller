@@ -1,5 +1,5 @@
 #!/bin/sh
-# Builds the downloadable app into dist/: FanController-<version>.zip and its SHA-256 checksum.
+# Builds the downloadable app into dist/: FanController-<version>.dmg and its SHA-256 checksum.
 # Run by semantic-release after Scripts/set-version.sh, with the full version (0.2.0-beta.1) for the file
 # name; also works locally, where it falls back to MARKETING_VERSION.
 #
@@ -11,10 +11,11 @@ cd "$(dirname "$0")/.."
 
 version="${1:-$(sed -n 's/^MARKETING_VERSION = //p' Config/Base.xcconfig)}"
 derived_data="build/DerivedData"
-app="$derived_data/Build/Products/Release/FanController.app"
-archive="dist/FanController-$version.zip"
+app="$derived_data/Build/Products/Release/Fan Controller.app"
+archive="dist/FanController-$version.dmg"
+staging="build/dmg"
 
-rm -rf "$derived_data" dist
+rm -rf "$derived_data" "$staging" dist
 mkdir -p dist
 
 xcodebuild \
@@ -30,8 +31,16 @@ xcodebuild \
 [ -d "$app" ] || { echo "Build failed: $app not found" >&2; exit 1; }
 
 codesign --verify --deep --strict "$app"
-# ditto keeps the bundle's signature and extended attributes intact, unlike zip.
-ditto -c -k --keepParent "$app" "$archive"
+# Xcode before 26 copies the Icon Composer document as is and the app ships without an icon.
+/usr/libexec/PlistBuddy -c "Print :CFBundleIconName" "$app/Contents/Info.plist" >/dev/null 2>&1 ||
+    { echo "Build has no app icon: build with Xcode 26 or later" >&2; exit 1; }
+# The disk image opens to the app next to a link to Applications, to drag it across. ditto keeps the
+# bundle's signature and extended attributes intact.
+mkdir -p "$staging"
+ditto "$app" "$staging/Fan Controller.app"
+ln -s /Applications "$staging/Applications"
+hdiutil create -quiet -volname "Fan Controller" -srcfolder "$staging" -fs HFS+ -format UDZO "$archive"
+rm -rf "$staging"
 (cd dist && shasum -a 256 "$(basename "$archive")" > "$(basename "$archive").sha256")
 echo "Built $archive"
 cat "$archive.sha256"
