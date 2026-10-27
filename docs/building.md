@@ -74,8 +74,8 @@ While the app is in beta, all work goes to `beta`, the default branch, through s
 1. The version follows from the [Conventional Commits](https://www.conventionalcommits.org) since the last tag: `fix:` gives a patch release, `feat:` a minor one, and `feat!:` or a `BREAKING CHANGE:` footer a major one. Other types (`docs:`, `ci:`, `test:`, `refactor:`, `chore:`…) don't release. On `beta`, the pre-release number goes up instead until the version changes.
 
 2. `Scripts/set-version.sh` writes the version to `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` in `Config/Base.xcconfig`. Bundle versions must be numbers, so `0.2.0-beta.1` becomes `0.2.0` and `0.2.0.1`. The app and the helper both take their `CFBundleVersion` from it, and the app restarts an installed helper whose version differs from its own, so the helper is updated with every release.
-3. `Scripts/build-release.sh` builds the app and zips it as `dist/FanController-<version>.zip`, with a `.sha256` checksum.
-4. `CHANGELOG.md` and `Base.xcconfig` are committed back to the branch as `chore(release): <version> [skip ci]`, the commit is tagged `v<version>`, and a GitHub release is published with the notes, the zip and its checksum (marked as a pre-release from `beta`). GitHub adds the source code archives to every release.
+3. `Scripts/build-release.sh` builds the app and packs it in a disk image, `dist/FanController-<version>.dmg`, with a `.sha256` checksum.
+4. `CHANGELOG.md` and `Base.xcconfig` are committed back to the branch as `chore(release): <version> [skip ci]`, the commit is tagged `v<version>`, and a GitHub release is published with the notes, the disk image and its checksum (marked as a pre-release from `beta`). GitHub adds the source code archives to every release.
 
 The configuration is in `.releaserc.json`; the tools are pinned in `package.json` and `package-lock.json`. GitHub Actions pushes the release commit straight to `beta` and `main`, so their protection only blocks force pushes and deletion: requiring pull requests or status checks would reject that commit.
 
@@ -92,11 +92,14 @@ Scripts/set-version.sh 0.0.1 && Scripts/build-release.sh   # then: git checkout 
 
 Release builds are signed without a team, so anyone can download them without an Apple Developer Program membership. Such a build reads every sensor, but **can't control fans**: the helper only accepts an app signed by its own team (see [security.md](security.md)), and the app doesn't register it. Fan control needs a build from source, signed with your own Apple ID as described above.
 
-Because the app isn't notarized, macOS blocks it the first time. Open it once, then choose **Open Anyway** in **System Settings › Privacy & Security**. Verify the download first:
+Because the app isn't notarized, macOS blocks it the first time. Verify the download, then, once the app is in Applications, remove the quarantine flag (or open it once and choose **Open Anyway** in **System Settings › Privacy & Security**):
 
 ```sh
-shasum -a 256 -c FanController-<version>.zip.sha256
+shasum -a 256 -c FanController-<version>.dmg.sha256
+xattr -dr com.apple.quarantine /Applications/FanController.app
 ```
+
+The README and every pre-release's notes (`releaseBodyTemplate` in `.releaserc.json`) give the same step; remove it from both once releases are signed with a Developer ID.
 
 Signing releases with a Developer ID and notarizing them would remove both limits. It needs a paid membership; the build script and the release job are where the certificate and `notarytool` would be added. Sign every release with the same Developer ID and bundle IDs from then on: macOS ties the registered helper to that identity, and changing it makes launchd refuse to start the helper until it is reinstalled from Settings › Fan Control.
 

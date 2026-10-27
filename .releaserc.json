@@ -28,9 +28,10 @@
       "@semantic-release/github",
       {
         "assets": [
-          { "path": "dist/FanController-*.zip", "label": "FanController.app (macOS 14 or later)" },
-          { "path": "dist/FanController-*.zip.sha256", "label": "SHA-256 checksum" }
+          { "path": "dist/FanController-*.dmg", "label": "Fan Controller (macOS 14 or later)" },
+          { "path": "dist/FanController-*.dmg.sha256", "label": "SHA-256 checksum" }
         ],
+        "releaseBodyTemplate": "<% if (branch.prerelease) { %>> [!NOTE]\n> **Beta:** this build isn't signed with a Developer ID or notarized yet, so macOS says it can't verify the app. Open the disk image, drag **FanController** to Applications, then remove the quarantine flag once:\n>\n> ```sh\n> xattr -dr com.apple.quarantine /Applications/FanController.app\n> ```\n>\n> Or open it once and choose **Open Anyway** in **System Settings › Privacy & Security**. The beta reads every sensor but can't control fans; see the [README](https://github.com/furkansenturk/mac-fan-controller#download).\n\n<% } %><%= nextRelease.notes %>",
         "successComment": false,
         "failComment": false,
         "releasedLabels": false
