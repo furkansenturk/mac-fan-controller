@@ -1,0 +1,117 @@
+name: CI
+
+on:
+  push:
+    branches: [main, beta]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  # Only pull requests: cancelling a push to a release branch could stop a release halfway.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test:
+    name: Test FanKit
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Run tests
+        working-directory: Packages/FanKit
+        run: swift test --parallel
+
+  build:
+    name: Build app
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project FanController.xcodeproj \
+            -scheme FanController \
+            -configuration Debug \
+            -destination 'platform=macOS' \
+            -derivedDataPath DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+  lint:
+    name: SwiftFormat
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      # A fixed release verified by checksum, rather than whatever Homebrew has that day.
+      - name: Install SwiftFormat
+        env:
+          VERSION: 0.64.0
+          SHA256: 95ea62625d0b898a7af870293311ae6f09e4a3147ecd900593687e4b9ab2fd98
+        run: |
+          curl -sSfLo "$RUNNER_TEMP/swiftformat.zip" \
+            "https://github.com/nicklockwood/SwiftFormat/releases/download/$VERSION/swiftformat.zip"
+          echo "$SHA256  $RUNNER_TEMP/swiftformat.zip" | shasum -a 256 -c
+          unzip -q "$RUNNER_TEMP/swiftformat.zip" -d "$RUNNER_TEMP/swiftformat"
+          echo "$RUNNER_TEMP/swiftformat" >> "$GITHUB_PATH"
+
+      - name: Lint
+        run: swiftformat --lint . --reporter github-actions-log
+
+  semgrep:
+    name: Semgrep
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Install Semgrep
+        run: pipx install semgrep==1.182.0
+
+      # The project's own rules for the privileged helper (.semgrep/), first against their fixtures.
+      - name: Test helper rules
+        run: semgrep scan --test --metrics off .semgrep
+
+      - name: Scan
+        run: semgrep scan --config auto --config .semgrep --exclude .semgrep --error
+
+  # Versions, tags and publishes a GitHub release from the Conventional Commits since the last one
+  # (configuration in .releaserc.json). Lint is not required yet: the codebase doesn't pass it.
+  release:
+    name: Release
+    needs: [test, build, semgrep]
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta')
+    runs-on: macos-15
+    permissions:
+      contents: write # tags, the release commit and the GitHub release
+    concurrency:
+      group: release
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0 # semantic-release reads the whole history and every tag
+          persist-credentials: false
+
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install release tools
+        run: npm ci --ignore-scripts
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

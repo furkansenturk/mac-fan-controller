@@ -1,0 +1,9 @@
+// FanHelper: privileged launch daemon embedded in FanController.app/Contents/MacOS.
+
+PRODUCT_NAME = FanHelper
+PRODUCT_BUNDLE_IDENTIFIER = $(HELPER_BUNDLE_ID)
+
+// Command-line tools have no bundle; the Info.plist is embedded in the binary.
+INFOPLIST_FILE = Helper/Info.plist
+CREATE_INFOPLIST_SECTION_IN_BINARY = YES
+SKIP_INSTALL = YES

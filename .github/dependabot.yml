@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    # Pull requests go to beta while the app is in beta.
+    target-branch: beta
+    schedule:
+      interval: monthly
+    # Wait a week before proposing a new release, so a compromised one is likely caught first.
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: ci
+
+  # Release tooling (package.json). The app itself has no Node dependencies.
+  - package-ecosystem: npm
+    directory: /
+    target-branch: beta
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    ignore:
+      # 10.x needs conventional-changelog-writer 9, but @semantic-release/release-notes-generator 14 ships
+      # writer 8 and the release fails to render its notes. Allow it once release-notes-generator 15 is stable.
+      - dependency-name: conventional-changelog-conventionalcommits
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: build

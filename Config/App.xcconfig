@@ -1,0 +1,13 @@
+// FanController.app
+
+PRODUCT_NAME = FanController
+PRODUCT_BUNDLE_IDENTIFIER = $(APP_BUNDLE_ID)
+
+GENERATE_INFOPLIST_FILE = YES
+INFOPLIST_KEY_CFBundleDisplayName = Fan Controller
+INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
+INFOPLIST_KEY_NSHumanReadableCopyright = © 2026 Furkan Şentürk. MIT License.
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+COMBINE_HIDPI_IMAGES = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks

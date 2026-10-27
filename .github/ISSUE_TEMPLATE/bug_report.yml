@@ -1,0 +1,69 @@
+name: Bug report
+description: Something doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. If fan control stopped working after a rebuild, see
+        [When fan control stops working after a rebuild](https://github.com/furkansenturk/mac-fan-controller/blob/HEAD/docs/building.md#when-fan-control-stops-working-after-a-rebuild) first.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Fan Controller
+        2. Choose Manual for the left fan
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Mac model identifier
+      description: Hold Option, open the Apple menu and choose System Information. It's under Hardware Overview.
+      placeholder: MacBookPro18,3
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "15.1"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or commit
+      description: From Fan Controller › About Fan Controller, or the commit you built.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Fan speeds or temperatures
+        - Manual or custom fan control
+        - Profiles
+        - Menu bar extra
+        - Settings
+        - Helper installation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash report
+      description: Optional. Output of `Scripts/dump-sensors.sh`, Console messages, or a crash report.
+      render: text

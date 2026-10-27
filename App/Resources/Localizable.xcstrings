@@ -1,0 +1,2045 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {},
+    "%@ Copy" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Kopyası"
+          }
+        }
+      }
+    },
+    "%@ is %@" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ şu an %@"
+          }
+        }
+      }
+    },
+    "%@ rpm" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ dev/dk"
+          }
+        }
+      }
+    },
+    "%@ speed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ hızı"
+          }
+        }
+      }
+    },
+    "%@ → %@" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ → %@"
+          }
+        }
+      }
+    },
+    "%@%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@%2$@"
+          }
+        }
+      }
+    },
+    "%@–%@ rpm" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@–%@ dev/dk"
+          }
+        }
+      }
+    },
+    "%lld fans" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld fan"
+          }
+        }
+      }
+    },
+    "%lld sensors" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sensör"
+          }
+        }
+      }
+    },
+    "A sensor is at or above its high limit, or macOS reports a high thermal state." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sensör yüksek sınırında ya da üzerinde, veya macOS yüksek bir ısıl durum bildiriyor."
+          }
+        }
+      }
+    },
+    "A sensor is warming up." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sensör ısınıyor."
+          }
+        }
+      }
+    },
+    "About Fan Controller" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Controller Hakkında"
+          }
+        }
+      }
+    },
+    "Above your %@ alert." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ uyarı sınırınızın üzerinde."
+          }
+        }
+      }
+    },
+    "Add Alert" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarı Ekle"
+          }
+        }
+      }
+    },
+    "Add Rule" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kural Ekle"
+          }
+        }
+      }
+    },
+    "Airflow Left" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hava Akışı Sol"
+          }
+        }
+      }
+    },
+    "Airflow Right" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hava Akışı Sağ"
+          }
+        }
+      }
+    },
+    "Alert" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarı"
+          }
+        }
+      }
+    },
+    "Alerts" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarılar"
+          }
+        }
+      }
+    },
+    "Allow fan control" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan kontrolüne izin ver"
+          }
+        }
+      }
+    },
+    "Allow notifications for Fan Controller to receive alerts." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarı alabilmek için Fan Controller’a bildirim izni verin."
+          }
+        }
+      }
+    },
+    "Allow or turn off the helper in System Settings." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardımcıya Sistem Ayarları’nda izin verin veya kapatın."
+          }
+        }
+      }
+    },
+    "At or above %@, high for this sensor." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ve üzeri; bu sensör için yüksek."
+          }
+        }
+      }
+    },
+    "Automatic" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik"
+          }
+        }
+      }
+    },
+    "Automatic (%@)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik (%@)"
+          }
+        }
+      }
+    },
+    "Automation" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomasyon"
+          }
+        }
+      }
+    },
+    "Average" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ortalama"
+          }
+        }
+      }
+    },
+    "Battery" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil"
+          }
+        }
+      }
+    },
+    "Battery %lld" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil %lld"
+          }
+        }
+      }
+    },
+    "Battery Gas Gauge" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pil Ölçer"
+          }
+        }
+      }
+    },
+    "CPU" : {
+      "shouldTranslate" : false
+    },
+    "CPU Core Average" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU Çekirdek Ortalaması"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vazgeç"
+          }
+        }
+      }
+    },
+    "Can’t Import Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil İçe Aktarılamıyor"
+          }
+        }
+      }
+    },
+    "Can’t Read Sensors" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensörler Okunamıyor"
+          }
+        }
+      }
+    },
+    "Celsius (°C)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Celsius (°C)"
+          }
+        }
+      }
+    },
+    "Changes are saved to the Custom profile." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Değişiklikler Özel profiline kaydedilir."
+          }
+        }
+      }
+    },
+    "Changes you make on a fan’s page are saved here." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan sayfalarında yaptığınız değişiklikler buraya kaydedilir."
+          }
+        }
+      }
+    },
+    "Changing this switches to the Custom profile, starting from “%@”." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bunu değiştirmek Özel profiline geçer; “%@” profilinin ayarlarıyla başlar."
+          }
+        }
+      }
+    },
+    "Charger" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şarj Devresi"
+          }
+        }
+      }
+    },
+    "Check Again" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden Denetle"
+          }
+        }
+      }
+    },
+    "Checking…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denetleniyor…"
+          }
+        }
+      }
+    },
+    "Choose" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seç"
+          }
+        }
+      }
+    },
+    "Connection" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantı"
+          }
+        }
+      }
+    },
+    "Control" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrol"
+          }
+        }
+      }
+    },
+    "Critical" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kritik"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil"
+          }
+        }
+      }
+    },
+    "Delete Alert" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyarıyı Sil"
+          }
+        }
+      }
+    },
+    "Delete Profile…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profili Sil…"
+          }
+        }
+      }
+    },
+    "Delete Rule" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuralı Sil"
+          }
+        }
+      }
+    },
+    "Delete “%@”?" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” silinsin mi?"
+          }
+        }
+      }
+    },
+    "Delete…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sil…"
+          }
+        }
+      }
+    },
+    "Disk Drives" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disk Sürücüleri"
+          }
+        }
+      }
+    },
+    "Drag the circles to change the temperatures" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklıkları değiştirmek için daireleri sürükleyin"
+          }
+        }
+      }
+    },
+    "Duplicate" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopyala"
+          }
+        }
+      }
+    },
+    "Duplicate Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profili Kopyala"
+          }
+        }
+      }
+    },
+    "Duplicate to Customize" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özelleştirmek İçin Kopyala"
+          }
+        }
+      }
+    },
+    "Duplicate “%@”" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” Profilini Kopyala"
+          }
+        }
+      }
+    },
+    "Efficiency Core %lld" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verimlilik Çekirdeği %lld"
+          }
+        }
+      }
+    },
+    "Enabled" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etkin"
+          }
+        }
+      }
+    },
+    "Export Profile…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profili Dışa Aktar…"
+          }
+        }
+      }
+    },
+    "Export…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dışa Aktar…"
+          }
+        }
+      }
+    },
+    "Fahrenheit (°F)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fahrenheit (°F)"
+          }
+        }
+      }
+    },
+    "Fair" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orta"
+          }
+        }
+      }
+    },
+    "Fan" : {
+      "shouldTranslate" : false
+    },
+    "Fan %lld" : {
+      "shouldTranslate" : false
+    },
+    "Fan Control" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Kontrolü"
+          }
+        }
+      }
+    },
+    "Fan Controller" : {
+      "shouldTranslate" : false
+    },
+    "Fan Controller uses a small helper to change fan speeds, because only the system can write to the fan controller. Reading temperatures doesn’t need it." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Controller, fan hızlarını değiştirmek için küçük bir yardımcı kullanır; çünkü fan denetleyicisine yalnızca sistem yazabilir. Sıcaklıkları okumak için yardımcı gerekmez."
+          }
+        }
+      }
+    },
+    "Fan curve" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan eğrisi"
+          }
+        }
+      }
+    },
+    "Fans" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fanlar"
+          }
+        }
+      }
+    },
+    "Fixes fan control after the app was rebuilt, updated or moved." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama yeniden derlendiğinde, güncellendiğinde veya taşındığında fan kontrolünü onarır."
+          }
+        }
+      }
+    },
+    "Full Speed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam Hız"
+          }
+        }
+      }
+    },
+    "GPU" : {
+      "shouldTranslate" : false
+    },
+    "GPU Cluster %lld" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU Kümesi %lld"
+          }
+        }
+      }
+    },
+    "GPU Cluster Average" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU Küme Ortalaması"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genel"
+          }
+        }
+      }
+    },
+    "Group" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grup"
+          }
+        }
+      }
+    },
+    "Group by Component" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bileşene Göre Grupla"
+          }
+        }
+      }
+    },
+    "Helper" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardımcı"
+          }
+        }
+      }
+    },
+    "High" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksek"
+          }
+        }
+      }
+    },
+    "High. macOS may reduce performance to cool down." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksek. macOS soğumak için performansı düşürebilir."
+          }
+        }
+      }
+    },
+    "Hottest CPU Core" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En Sıcak CPU Çekirdeği"
+          }
+        }
+      }
+    },
+    "Hottest GPU Cluster" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En Sıcak GPU Kümesi"
+          }
+        }
+      }
+    },
+    "Hottest Memory Sensor" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En Sıcak Bellek Sensörü"
+          }
+        }
+      }
+    },
+    "Icon" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simge"
+          }
+        }
+      }
+    },
+    "If nothing is selected, the icon is shown so Fan Controller stays reachable." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiçbir şey seçilmezse Fan Controller’a ulaşılabilmesi için simge gösterilir."
+          }
+        }
+      }
+    },
+    "If this profile is in use, the fans return to Automatic. This can’t be undone." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu profil kullanılıyorsa fanlar Otomatik’e döner. Bu işlem geri alınamaz."
+          }
+        }
+      }
+    },
+    "Import Profile…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil İçe Aktar…"
+          }
+        }
+      }
+    },
+    "Imported Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İçe Aktarılan Profil"
+          }
+        }
+      }
+    },
+    "In Use" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanımda"
+          }
+        }
+      }
+    },
+    "Keeps the fan from speeding up and slowing down over and over while the temperature hovers around one value." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklık bir değer etrafında gidip gelirken fanın sürekli hızlanıp yavaşlamasını önler."
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dil"
+          }
+        }
+      }
+    },
+    "Left Fan" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol Fan"
+          }
+        }
+      }
+    },
+    "Manual" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel"
+          }
+        }
+      }
+    },
+    "Maximum speed at" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En yüksek hıza ulaştığı sıcaklık"
+          }
+        }
+      }
+    },
+    "Memory" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bellek"
+          }
+        }
+      }
+    },
+    "Memory %lld" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bellek %lld"
+          }
+        }
+      }
+    },
+    "Memory Average" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bellek Ortalaması"
+          }
+        }
+      }
+    },
+    "Menu Bar" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menü Çubuğu"
+          }
+        }
+      }
+    },
+    "Minimum speed up to %lld%@, maximum speed from %lld%@." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%@ sıcaklığa kadar en düşük hız, %lld%@ sıcaklıktan itibaren en yüksek hız."
+          }
+        }
+      }
+    },
+    "Move Down" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşağı Taşı"
+          }
+        }
+      }
+    },
+    "Move Up" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yukarı Taşı"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad"
+          }
+        }
+      }
+    },
+    "New Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Profil"
+          }
+        }
+      }
+    },
+    "New Profile (⌘N)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Profil (⌘N)"
+          }
+        }
+      }
+    },
+    "No reading, running at maximum speed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okuma yok, en yüksek hızda çalışıyor"
+          }
+        }
+      }
+    },
+    "No rule applies" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyan kural yok"
+          }
+        }
+      }
+    },
+    "No rules yet." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henüz kural yok."
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yok"
+          }
+        }
+      }
+    },
+    "Normal" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal"
+          }
+        }
+      }
+    },
+    "Not checked" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denetlenmedi"
+          }
+        }
+      }
+    },
+    "Not installed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüklü değil"
+          }
+        }
+      }
+    },
+    "Not responding" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanıt vermiyor"
+          }
+        }
+      }
+    },
+    "Notifications are off" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimler kapalı"
+          }
+        }
+      }
+    },
+    "Notify above" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu sıcaklığı geçince bildir"
+          }
+        }
+      }
+    },
+    "Now" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu an"
+          }
+        }
+      }
+    },
+    "Now %@." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu an %@."
+          }
+        }
+      }
+    },
+    "Now · %@" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu an · %@"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapalı"
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açık"
+          }
+        }
+      }
+    },
+    "On Battery" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pille Çalışırken"
+          }
+        }
+      }
+    },
+    "On Power Adapter" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaptöre Takılıyken"
+          }
+        }
+      }
+    },
+    "Open Fan Control Settings" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Kontrolü Ayarlarını Aç"
+          }
+        }
+      }
+    },
+    "Open Fan Controller" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Controller’ı Aç"
+          }
+        }
+      }
+    },
+    "Open Login Items" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Öğelerini Aç"
+          }
+        }
+      }
+    },
+    "Open System Settings" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem Ayarları’nı Aç"
+          }
+        }
+      }
+    },
+    "Open at login" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Girişte aç"
+          }
+        }
+      }
+    },
+    "Other Sensors" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diğer Sensörler"
+          }
+        }
+      }
+    },
+    "Performance Core %lld" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Performans Çekirdeği %lld"
+          }
+        }
+      }
+    },
+    "Permission" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İzin"
+          }
+        }
+      }
+    },
+    "Power Manager Die Average" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güç Yöneticisi Ortalaması"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Profile Switching" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil Değiştirme"
+          }
+        }
+      }
+    },
+    "Profiles" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profiller"
+          }
+        }
+      }
+    },
+    "Quit Fan Controller" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Controller’dan Çık"
+          }
+        }
+      }
+    },
+    "Reinstall" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden Yükle"
+          }
+        }
+      }
+    },
+    "Reinstall helper" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardımcıyı yeniden yükle"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaldır"
+          }
+        }
+      }
+    },
+    "Remove helper" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardımcıyı kaldır"
+          }
+        }
+      }
+    },
+    "Rename" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeniden Adlandır"
+          }
+        }
+      }
+    },
+    "Rename Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profili Yeniden Adlandır"
+          }
+        }
+      }
+    },
+    "Responding (build %@)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yanıt veriyor (derleme %@)"
+          }
+        }
+      }
+    },
+    "Restart Fan Controller to use the new language." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni dili kullanmak için Fan Controller’ı yeniden başlatın."
+          }
+        }
+      }
+    },
+    "Restart Now" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdi Yeniden Başlat"
+          }
+        }
+      }
+    },
+    "Returns all fans to automatic and uninstalls the helper." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm fanları otomatiğe alır ve yardımcıyı kaldırır."
+          }
+        }
+      }
+    },
+    "Right Fan" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağ Fan"
+          }
+        }
+      }
+    },
+    "Rule Actions" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kural İşlemleri"
+          }
+        }
+      }
+    },
+    "Rules" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurallar"
+          }
+        }
+      }
+    },
+    "Rules are checked from top to bottom and the first one that applies is used. When none applies, the profile you chose yourself comes back." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurallar yukarıdan aşağıya denetlenir ve uyan ilk kural kullanılır. Hiçbiri uymadığında kendi seçtiğiniz profile geri dönülür."
+          }
+        }
+      }
+    },
+    "SSD" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SSD"
+          }
+        }
+      }
+    },
+    "Save as New Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Profil Olarak Kaydet"
+          }
+        }
+      }
+    },
+    "Select an Item" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir Öğe Seçin"
+          }
+        }
+      }
+    },
+    "Sensor" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensör"
+          }
+        }
+      }
+    },
+    "Sensors" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensörler"
+          }
+        }
+      }
+    },
+    "Serious" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciddi"
+          }
+        }
+      }
+    },
+    "Set All Fans to Automatic" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm Fanları Otomatiğe Al"
+          }
+        }
+      }
+    },
+    "Settings…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar…"
+          }
+        }
+      }
+    },
+    "Show" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Göster"
+          }
+        }
+      }
+    },
+    "Show icon in Dock" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock’ta simgeyi göster"
+          }
+        }
+      }
+    },
+    "Show in menu bar" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menü çubuğunda göster"
+          }
+        }
+      }
+    },
+    "Show this profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu profili göster"
+          }
+        }
+      }
+    },
+    "Shows your Mac’s fan speeds and temperatures, and lets you control the fans." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac’inizin fan hızlarını ve sıcaklıklarını gösterir, fanları kontrol etmenizi sağlar."
+          }
+        }
+      }
+    },
+    "Slightly elevated. Fans may speed up." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biraz yüksek. Fanlar hızlanabilir."
+          }
+        }
+      }
+    },
+    "Slow down after cooling by" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yavaşlamadan önce soğuma"
+          }
+        }
+      }
+    },
+    "Source Code" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaynak Kodu"
+          }
+        }
+      }
+    },
+    "Speed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hız"
+          }
+        }
+      }
+    },
+    "Speed range unavailable, controlled by macOS" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hız aralığı okunamadı, macOS kontrol ediyor"
+          }
+        }
+      }
+    },
+    "Start increasing at" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Artmaya başladığı sıcaklık"
+          }
+        }
+      }
+    },
+    "Status" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum"
+          }
+        }
+      }
+    },
+    "Stopped" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durdu"
+          }
+        }
+      }
+    },
+    "Switch profiles automatically" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profilleri otomatik değiştir"
+          }
+        }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem"
+          }
+        }
+      }
+    },
+    "Target speed" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hedef hız"
+          }
+        }
+      }
+    },
+    "Temperature" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklık"
+          }
+        }
+      }
+    },
+    "Temperature unit" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklık birimi"
+          }
+        }
+      }
+    },
+    "Temperatures" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklıklar"
+          }
+        }
+      }
+    },
+    "Temperatures are within normal limits." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sıcaklıklar normal sınırlarda."
+          }
+        }
+      }
+    },
+    "The Dock icon stays while the menu bar item is hidden, so Fan Controller remains reachable." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menü çubuğu öğesi gizliyken Fan Controller’a ulaşılabilmesi için Dock simgesi kalır."
+          }
+        }
+      }
+    },
+    "The fan control helper isn’t responding. Reinstall it in Fan Control settings." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan kontrol yardımcısı yanıt vermiyor. Fan Kontrolü ayarlarından yeniden yükleyin."
+          }
+        }
+      }
+    },
+    "The file isn’t a Fan Controller profile." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu dosya bir Fan Controller profili değil."
+          }
+        }
+      }
+    },
+    "The menu bar item stays while the Dock icon is hidden, so Fan Controller remains reachable." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock simgesi gizliyken Fan Controller’a ulaşılabilmesi için menü çubuğu öğesi kalır."
+          }
+        }
+      }
+    },
+    "The profile was made by a newer version of Fan Controller. Update the app to import it." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu profil Fan Controller’ın daha yeni bir sürümüyle oluşturulmuş. İçe aktarmak için uygulamayı güncelleyin."
+          }
+        }
+      }
+    },
+    "This Mac" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Mac"
+          }
+        }
+      }
+    },
+    "This Mac doesn’t have fans." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Mac’te fan yok."
+          }
+        }
+      }
+    },
+    "This copy isn’t signed by a developer team, so it can’t control fans. Build Fan Controller from source with your Apple ID to use fan control." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu kopya bir geliştirici ekibiyle imzalanmadığı için fanları kontrol edemez. Fan kontrolü için Fan Controller'ı Apple kimliğinizle kaynaktan derleyin."
+          }
+        }
+      }
+    },
+    "This profile can’t be changed." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu profil değiştirilemez."
+          }
+        }
+      }
+    },
+    "Trackpad" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İzleme Dörtgeni"
+          }
+        }
+      }
+    },
+    "Turn on Fan Controller in Login Items so it can change fan speeds." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan Controller’ın fan hızlarını değiştirebilmesi için Giriş Öğeleri’nde açın."
+          }
+        }
+      }
+    },
+    "Turn on Fan Controller in System Settings to change fan speeds." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fan hızlarını değiştirmek için Sistem Ayarları’nda Fan Controller’ı açın."
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilinmiyor"
+          }
+        }
+      }
+    },
+    "Untitled Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adsız Profil"
+          }
+        }
+      }
+    },
+    "Use This Profile" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Profili Kullan"
+          }
+        }
+      }
+    },
+    "Uses the highest temperature of the selected sensors." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen sensörlerden en yüksek sıcaklık kullanılır."
+          }
+        }
+      }
+    },
+    "Version %@ (%@)" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sürüm %@ (%@)"
+          }
+        }
+      }
+    },
+    "Very high. macOS is reducing performance to cool down." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok yüksek. macOS soğumak için performansı düşürüyor."
+          }
+        }
+      }
+    },
+    "Waiting for approval" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onay bekleniyor"
+          }
+        }
+      }
+    },
+    "Warm" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilık"
+          }
+        }
+      }
+    },
+    "Warming up; high from %@." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isınıyor; %@ ve üzeri yüksek sayılır."
+          }
+        }
+      }
+    },
+    "Website" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web Sitesi"
+          }
+        }
+      }
+    },
+    "When an App Is Open…" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir Uygulama Açıkken…"
+          }
+        }
+      }
+    },
+    "While %@ Is Open" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Açıkken"
+          }
+        }
+      }
+    },
+    "Wi-Fi" : {
+      "shouldTranslate" : false
+    },
+    "Without a Dock icon, Fan Controller lives in the menu bar and its menus don’t appear at the top of the screen." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock simgesi olmadan Fan Controller menü çubuğunda çalışır ve menüleri ekranın üstünde görünmez."
+          }
+        }
+      }
+    },
+    "You’re notified once when a temperature goes above its limit, and again only after it has cooled %@ below it." : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir sıcaklık sınırını geçtiğinde bir kez bildirim alırsınız; yeniden bildirim için sınırın %@ altına inmesi gerekir."
+          }
+        }
+      }
+    },
+    "macOS thermal state: %@" : {
+      "localizations" : {
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS ısıl durumu: %@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

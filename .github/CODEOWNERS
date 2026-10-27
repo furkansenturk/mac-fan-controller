@@ -1,0 +1,8 @@
+# Code that runs as root or defines what the root helper accepts gets extra review.
+# See CONTRIBUTING.md and docs/security.md.
+
+/Helper/                          @furkansenturk
+/Packages/FanKit/Sources/FanXPC/  @furkansenturk
+/Packages/FanKit/Sources/SMCKit/  @furkansenturk
+/Config/                          @furkansenturk
+/.github/                         @furkansenturk

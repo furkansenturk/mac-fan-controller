@@ -1,0 +1,36 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.10000,0.45000,0.95000,1.00000",
+      "display-p3:0.05000,0.75000,0.85000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "hub.svg",
+          "name" : "hub"
+        },
+        {
+          "image-name" : "blades.svg",
+          "name" : "blades",
+          "opacity" : 0.9
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.4
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+# Rules for the privileged helper, which runs as root and must not trust what the app sends it.
+# Run with: semgrep scan --config .semgrep --exclude .semgrep
+# Test with: semgrep scan --test .semgrep
+rules:
+  - id: helper-unchecked-numeric-conversion
+    languages: [swift]
+    severity: ERROR
+    message: >-
+      Converting a value to an integer type traps on NaN, infinity or overflow, and a trap in the root
+      helper leaves fans in manual mode. Validate with FanLimits first, or log the Double itself.
+    paths:
+      include: ["/Helper/"]
+    pattern-either:
+      - pattern: Int($X)
+      - pattern: Int32($X)
+      - pattern: UInt16($X)
+      - pattern: UInt8($X)
+
+  - id: helper-unvalidated-fan-target
+    languages: [swift]
+    severity: ERROR
+    message: >-
+      The helper writes a fan speed that didn't come from FanLimits.target(rpm:minimum:maximum:), which
+      refuses NaN and unreadable ranges and clamps to the fan's own minimum and maximum.
+    paths:
+      include: ["/Helper/"]
+    patterns:
+      - pattern: '$SMC.write(.fanTarget($FAN), value: $VALUE)'
+      - pattern-not-inside: |
+          guard ..., let $VALUE = FanLimits.target(...) else { ... }
+          ...
+      - pattern-not-inside: |
+          guard let $VALUE = FanLimits.target(...) else { ... }
+          ...
+
+  - id: helper-fan-index-not-checked
+    languages: [swift]
+    severity: ERROR
+    message: >-
+      A fan index from the app is used to build an SMC key without checking it against the fans this Mac
+      has. An index above 9 traps when the key is built.
+    paths:
+      include: ["/Helper/"]
+    patterns:
+      - pattern-inside: |
+          func $METHOD(_ $FAN: Int, ...) { ... }
+      - pattern-either:
+          - pattern: .fanMode($FAN)
+          - pattern: .fanTarget($FAN)
+          - pattern: .fanMinimum($FAN)
+          - pattern: .fanMaximum($FAN)
+          - pattern: .fanActual($FAN)
+      - pattern-not-inside: |
+          guard <... $RANGE.contains($FAN) ...> else { ... }
+          ...
+
+  - id: helper-accepts-connection-without-code-signing-requirement
+    languages: [swift]
+    severity: ERROR
+    message: >-
+      The XPC listener accepts connections without setCodeSigningRequirement, so any process could drive
+      the fans as root.
+    paths:
+      include: ["/Helper/"]
+    patterns:
+      - pattern: |
+          func listener($L: NSXPCListener, shouldAcceptNewConnection $C: NSXPCConnection) -> Bool { ... }
+      - pattern-not: |
+          func listener($L: NSXPCListener, shouldAcceptNewConnection $C: NSXPCConnection) -> Bool {
+            ...
+            $C.setCodeSigningRequirement(...)
+            ...
+          }

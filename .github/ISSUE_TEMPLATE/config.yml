@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/furkansenturk/mac-fan-controller/security/advisories/new
+    about: Please don't open a public issue for security problems. Report them privately here.
+  - name: Building and signing
+    url: https://github.com/furkansenturk/mac-fan-controller/blob/HEAD/docs/building.md
+    about: Fan control not working after a rebuild? Check the build and signing guide first.

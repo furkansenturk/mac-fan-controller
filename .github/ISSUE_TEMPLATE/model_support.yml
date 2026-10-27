@@ -1,0 +1,61 @@
+name: Model support
+description: Report how Fan Controller works on your Mac, so its sensors can be added.
+title: "Model support: <model identifier>"
+labels: [model support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the most useful report you can send. See [supported models](https://github.com/furkansenturk/mac-fan-controller/blob/HEAD/docs/supported-models.md) for details.
+        Please put your model identifier in the title.
+  - type: input
+    id: model
+    attributes:
+      label: Model identifier
+      description: Hold Option, open the Apple menu and choose System Information. It's under Hardware Overview.
+      placeholder: MacBookPro18,3
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac
+      placeholder: MacBook Pro (14-inch, 2021)
+    validations:
+      required: true
+  - type: input
+    id: chip
+    attributes:
+      label: Chip
+      placeholder: M1 Pro
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "15.1"
+    validations:
+      required: true
+  - type: textarea
+    id: dump
+    attributes:
+      label: Sensor dump
+      description: |
+        Run `Scripts/dump-sensors.sh > my-mac.txt` and drag `my-mac.txt` here, or paste its output.
+        It only contains hardware readings, no personal data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: works
+    attributes:
+      label: What works
+      options:
+        - label: Fan speeds are shown
+        - label: CPU and GPU temperatures are shown
+        - label: Manual fan control works
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional. Anything that looked wrong, such as sensors with odd values.

@@ -1,0 +1,8 @@
+// Copy this file to Signing.xcconfig (ignored by git) and fill in your Team ID.
+// Find it at https://developer.apple.com/account under Membership details.
+//
+// A Team ID is required for the privileged helper: it only accepts XPC connections
+// from an app signed by the same team.
+
+DEVELOPMENT_TEAM = ABCDE12345
+CODE_SIGN_IDENTITY = Apple Development

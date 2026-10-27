@@ -1,0 +1,13 @@
+--swiftversion 5.9
+--indent 4
+--maxwidth 120
+--wraparguments before-first
+--wrapcollections before-first
+--self remove
+--ranges no-space
+--patternlet inline
+--exclude .semgrep
+
+# The project's own style, which these rules would rewrite: explicit `return` in switch cases, one-line
+# bodies such as `guard … else { return nil }` and `var name: String { … }`, and `try` next to the call.
+--disable redundantReturn,wrapIfStatementBodies,wrapPropertyBodies,wrapFunctionBodies,wrapLoopBodies,hoistTry,conditionalAssignment
